@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <img src="static/favicon-32x32.png">
+            <img src="static/favicon-32x32.png" alt="Logo with Letters HT">
         </header>
         <nav>
             <a href="index.html">Home </a>
@@ -19,15 +19,63 @@
             <a href="Projects.html">Projects </a>
             <a href="Contact.html">Contact </a>
             <a href="static/Resume.pdf" target="_blank">Resume</a>
+            <button>Night Mode</button>
+        </nav>
+        <main>
             <search>
                 <form>
                     <input>
                 </form>
             </search>
-            <button>Night Mode</button>
-        </nav>
-        <main>
-
+            <dialog open>
+                Interested in working with me?
+                Contact me <a href="/Contact.html">here</a>
+            </dialog>
+            <details>
+                <summary><h2>Project 1: Tiny VLM Project</h2></summary>
+                <pre>
+                    This project, me and a group of 3 worked a Vision-Language Model where given an image, the model 
+                    is able to give information on the image. Alongside that, it is able to answer questions regarding
+                    the image with a good accuracy. In the project I worked primarily on the data exploration phase,
+                    understanding the data our dataset contained, and instruction tuning, fine tunes the responses on 
+                    a labeled dataset and outputs. This project taught a lot of the team work needed in a project and 
+                    the importance of communication.
+                </pre>
+                <figure>
+                    <img src="static/VLM.png" alt="Interface of Demo Website" width="30%">
+                    <figcaption>Demo Website using our model</figcaption>
+                    <img src="static/results.png" alt="Results from providing image" width="30%">
+                    <figcaption>Results obtained from passing in said image</figcaption>
+                </figure>
+            </details>
+            <details>
+                <summary><h2>Project 2: Simple Portfolio Site</h2></summary>
+                <pre>
+                    This was the final project for this course and we were tasked to create a portfolio using HTML, CSS, 
+                    and JavaScript and have it be deployed onto GitHub for eveyone to see. This final project taught me 
+                    a lot about bringing in the important concepts on HTML, CSS and JavaScript and putting it together to 
+                    make something that has a tangible impact outside the scope of the classroom. It taught important skills 
+                    that I can apply to, not only to this class but, my career as well.
+                </pre>
+                <figure>
+                    <img src="static/landing_page.png" alt="Landing Page of portfolio" width="30%">
+                    <figcaption>The Landing page of Portfolio</figcaption>
+                </figure>
+            </details>
+            <details>
+                <summary><h2>Project 3: Synthesizer Project</h2></summary>
+                <pre>
+                    This was a final project offered for ECE45. In this project me and my group were tasked in creating a synthesizer 
+                    and using the concepts that we learned in the course. Using core concepts like Fourier Transforms, modulations, 
+                    filters, and etc. My first instance working in a large group project, and learned core group communication. Also 
+                    taught a lot about intricacies of the things I was learning. Furthermore, was my first expereince working with 
+                    development of any sort of software that can be used by everyone.
+                </pre>
+                <figure>
+                    <img src="static/synthesizer.png" alt="App of the synthesizer" width="30%">
+                    <figcaption>App of the synthesizer</figcaption>
+                </figure>
+            </details>
         </main>
         <footer>
             Copyright Henry Tran 2025
