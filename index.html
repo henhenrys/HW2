@@ -8,18 +8,6 @@
         <title>Personal Portfolio</title>
         <link rel="icon" type="image/x-icon" href="static/favicon.ico">
         <style>
-            cookie-here {
-                border: 0px;
-                margin: 0px;
-                padding: 0px;
-                text-align: center;
-                background-color: brown;
-                color: white;
-            }
-            cookie-here[cookie-monster="eat"] {
-                background-color: blue;
-                color: brown;
-            }
         </style>
     </head>
     <body>
@@ -74,14 +62,20 @@
             <address>
                 9450 Gilman Dr. La Jolla, CA 92092
             </address>
-            <cookie-here>COOKIE IS HERE</cookie-here>
-            <cookie-here cookie-monster="eat">COOKIE MONSTER WAS HERE</cookie-here>
+            <hello-world></hello-world>
         </footer>
         <script>
             var canvas = document.getElementById("theCanvas");
             var ctxt = canvas.getContext("2d");
             ctxt.font = "12px Times New Roman";
             ctxt.fillText("Hello World",10,50);
+            class HelloWorldElement extends HTMLElement {
+                constructor() {
+                super();
+                console.log("Hello world!");
+                }
+            }
+            customElements.define("hello-world", HelloWorldElement);
         </script>
         <noscript>Your browser does not support JavaScript!</noscript>
     </body>
