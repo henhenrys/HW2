@@ -11,12 +11,12 @@
     <body>
         <header>
             <img src="static/favicon-32x32.png" alt="Logo with Letters HT">
-            <search>
-                <form>
-                    <input>
-                </form>
-            </search>
         </header>
+        <search>
+            <form>
+                <input>
+            </form>
+        </search>
         <nav>
             <a href="index.html">Home </a>
             <a href="About.html">About </a>
@@ -28,7 +28,10 @@
         </nav>
         <main>
             <table style="border: 1px solid black;">
-                <caption>Connect With me Here</caption>
+                <caption>Connect With Me Here</caption>
+                <colgroup>
+                    <col span="3" style="background-color: aqua;">
+                </colgroup>
                 <tr>
                     <th>GitHub</th>
                     <th>LinkedIn</th>
@@ -60,6 +63,18 @@
                    <option value="Other">
                  </datalist><br>
 
+                 <label for="urgency">How Urgent</label>
+                 <select name="urgency" id="urgency">
+                   <optgroup label="Greatly">
+                     <option value="Job Offer">Job Offer</option>
+                     <option value="Copyright">Copyright</option>
+                   </optgroup>
+                   <optgroup label="Minimal">
+                     <option value="Word of Wisdom">Words of Wisdom</option>
+                     <option value="Meeting">Meeting</option>
+                   </optgroup>
+                 </select><br>
+
                  <label for="response">Response:</label>
                  <textarea></textarea><br>  
                  <input type="submit" value="Submit">
@@ -68,7 +83,7 @@
                
         </main>
         <footer>
-            Copyright Henry Tran 2025
+            Copyright <span id="user">Henry Tran</span> 2025
             <address>
                 9450 Gilman Dr. La Jolla, CA 92092
             </address>
@@ -76,5 +91,6 @@
         <script>
 
         </script>
+        <noscript>Your browser does not support JavaScript!</noscript>
     </body>
 </html>

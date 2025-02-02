@@ -11,12 +11,12 @@
     <body>
         <header>
             <img src="static/favicon-32x32.png" alt="Logo with Letters HT">
-            <search>
-                <form>
-                    <input>
-                </form>
-            </search>
         </header>
+        <search>
+            <form>
+                <input>
+            </form>
+        </search>
         <nav>
             <a href="index.html">Home </a>
             <a href="About.html">About </a>
@@ -26,12 +26,13 @@
             <a href="static/Resume-HT.pdf" target="_blank">Resume</a>
             <button>Night Mode</button>
         </nav>
+        <marquee>
+            <code>
+                echo "Hello World!"; touch helloWorld.txt; vim helloWorld.txt; cat helloWorld.txt; Hello World!
+            </code>
+            <p>Press <kbd>ALT</kbd> + <kbd>F4</kbd> to have a pleasant suprise</p>
+        </marquee>
         <main>
-            <marquee>
-                <code>
-                    echo "Hello World!"; touch helloWorld.txt; vim helloWorld.txt; cat helloWorld.txt; Hello World!
-                </code>
-            </marquee>
             <h2>Technical Skills</h2>
             <h3>Programming Languages/Tools</h3>
             <ol>
@@ -56,7 +57,7 @@
             </ol>
         </main>
         <footer>
-            Copyright Henry Tran 2025
+            Copyright <span id="user">Henry Tran</span> 2025
             <address>
                 9450 Gilman Dr. La Jolla, CA 92092
             </address>
@@ -64,5 +65,6 @@
         <script>
 
         </script>
+        <noscript>Your browser does not support JavaScript!</noscript>
     </body>
 </html>
