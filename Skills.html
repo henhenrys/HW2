@@ -11,7 +11,14 @@
     <body>
         <header>
             <img src="static/favicon-32x32.png" alt="Logo with Letters HT">
-
+            <h1>Movie website</h1>
+            <search>
+              <form action="./search/">
+                <label for="movie">Find a Movie</label>
+                <input type="search" id="movie" name="q" />
+                <button type="submit">Search</button>
+              </form>
+            </search>
             <marquee>
                 <code>
                     echo "Hello World!"; touch helloWorld.txt; vim helloWorld.txt; cat helloWorld.txt; Hello World!
@@ -22,16 +29,6 @@
             <h3>Looking for Something?</h3>
         </header>
         <nav>
-            <header>
-                <h1>Movie website</h1>
-                <search>
-                  <form action="./search/">
-                    <label for="movie">Find a Movie</label>
-                    <input type="search" id="movie" name="q" />
-                    <button type="submit">Search</button>
-                  </form>
-                </search>
-              </header>
             <!-- <search>
                 <form role="search">
                     <label for="query">Search Here:</label>
