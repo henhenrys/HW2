@@ -11,6 +11,11 @@
     <body>
         <header>
             <img src="static/favicon-32x32.png" alt="Logo with Letters HT">
+            <search>
+                <form>
+                    <input>
+                </form>
+            </search>
         </header>
         <nav>
             <a href="index.html">Home </a>
@@ -18,24 +23,32 @@
             <a href="Skills.html">Skills </a>
             <a href="Projects.html">Projects </a>
             <a href="Contact.html">Contact </a>
-            <a href="static/Resume.pdf" target="_blank">Resume</a>
+            <a href="static/Resume-HT.pdf" target="_blank">Resume</a>
             <button>Night Mode</button>
         </nav>
-        <search>
-            <form>
-                <input>
-            </form>
-        </search>
         <main>
+            <table style="border: 1px solid black;">
+                <caption>Connect With me Here</caption>
+                <tr>
+                    <th>GitHub</th>
+                    <th>LinkedIn</th>
+                    <th>Discord</th>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/henhenrys">Here</a></td>
+                    <td><a href="https://www.linkedin.com/in/henry-tran-308a8a227/">Here</a></td>
+                    <td><a href="https://www.discord.com">Here</a></td>
+                </tr>
+            </table><br>
             <form>
                 <fieldset>
                  <legend>Contact Me:</legend>
                  <label for="fname">First name:</label>
-                 <input type="text" id="fname" name="fname"><br><br>
+                 <input type="text" id="fname" name="fname"><br>
                  <label for="lname">Last name:</label>
-                 <input type="text" id="lname" name="lname"><br><br>
+                 <input type="text" id="lname" name="lname"><br>
                  <label for="email">Email:</label>
-                 <input type="email" id="email" name="email"><br><br>
+                 <input type="email" id="email" name="email"><br>
 
                  <label for="reason">Choose your reason:</label>
                  <input list="reasons" name="reason" id="reason">
@@ -45,10 +58,10 @@
                    <option value="Concerns">
                    <option value="Advice">
                    <option value="Other">
-                 </datalist><br><br>
+                 </datalist><br>
 
                  <label for="response">Response:</label>
-                 <textarea></textarea><br><br>
+                 <textarea></textarea><br>  
                  <input type="submit" value="Submit">
                 </fieldset>
                </form>
@@ -56,6 +69,9 @@
         </main>
         <footer>
             Copyright Henry Tran 2025
+            <address>
+                9450 Gilman Dr. La Jolla, CA 92092
+            </address>
         </footer>
         <script>
 
